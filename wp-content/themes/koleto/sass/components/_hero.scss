@@ -1,0 +1,80 @@
+.hero {
+    max-height: 1200px;
+    position:relative;
+
+    p
+    {
+        opacity:0.7;
+    }
+}
+
+.hero.purple {
+    background-image: $color__gradient-secondary-radial;
+}
+.hero.primary-g {
+    background-image: $color__gradient-primary-left;
+}
+
+.hero--stripes {
+    overflow: hidden;
+
+    /* Version where stripes pop out of box */
+    &.overflow {
+        min-height: ($stripe_height * 3); /* Set a min height relative to stripe height or the stripes overflow above and below */
+        overflow: visible;
+
+        @media only screen and (max-width: 1200px) {
+            min-height: ($stripe_height_half * 3); /* Set a min height relative to stripe height or the stripes overflow above and below */
+        }
+
+
+        /* Vertically centered box */
+        .container, .row
+        {
+            min-height: ($stripe_height * 3); /* Set a min height relative to stripe height or the stripes overflow above and below */
+
+            @media only screen and (max-width: 1200px) {
+                min-height: ($stripe_height_half * 3); /* Set a min height relative to stripe height or the stripes overflow above and below */
+            }
+        }
+        .row > section, 
+        .row > div,
+        .row > aside
+        {
+            position:relative;
+        }
+        .segment
+        {
+            position:absolute;
+            top:15%;
+
+            @media only screen and (max-width: 1200px) {
+                top:5%;
+            }
+        }
+    }
+
+    &.right {
+        .stripes {
+            right: -20%;
+        }
+        @media only screen and (max-width: 1200px) {
+            .stripes {
+                right: -20%;
+            }
+        }
+    }
+
+    &.left {
+        .stripes {
+            top: 20%;
+            left: -60%;
+        }
+        @media only screen and (max-width: 1200px) {
+            .stripes {
+                top: 20%;
+                left: -60%;
+            }
+        }
+    }
+}

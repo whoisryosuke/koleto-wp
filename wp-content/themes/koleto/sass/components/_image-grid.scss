@@ -1,0 +1,41 @@
+/* Image Grid
+* Used for created 2 column grids where images float behind a segment (box) */
+.image-grid
+{
+    .row
+    {
+        position:relative;
+        margin:6rem 0;
+
+        /* Both the .row and .image need the .right class to make it work */
+        &.right {
+            flex-direction: row-reverse;
+        }
+
+        .image
+        {
+            z-index:-1;
+
+            /* Both the .row and .image need the .right class to make it work */
+            &.right
+            {
+                img {
+                    float:right;
+                }
+            }
+        }
+
+        .text
+        {
+            position:absolute;
+            top:0;
+            left:0;
+
+            &.right
+            {
+                left:auto;
+                right:0;
+            }
+        }
+    }
+}

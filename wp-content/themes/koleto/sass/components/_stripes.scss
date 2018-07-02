@@ -1,0 +1,91 @@
+.stripes {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left:0;
+
+    &.fade {
+        opacity:0.1;
+    }
+
+    &.twist {
+        // transform: rotate(-315deg);
+        transform: rotate(-290deg);
+    }
+
+    /* Colors */
+    &.primary {
+        .stripe {
+            background-image: linear-gradient(-46deg, #6C3F98 0%, #EE486B 100%);
+        }
+    }
+
+    &.purple {
+        .stripe {
+            background-image: $color__gradient-secondary-stripe;
+        }
+    }
+
+    /* Stripe */
+    .stripes__row:nth-child(2n) {
+        position: absolute;
+        top: -$stripe_height + 65px;
+        left: $stripe_width - 100px;
+    }
+    .stripe {
+        width: $stripe_width;
+        height: $stripe_height;
+        transform: rotate(-15deg);
+    }
+    @media only screen and (max-width: 1200px) {
+        .stripe {
+            width: ($stripe_width / 1.5);
+            height: ($stripe_height / 1.5);
+        }
+        .stripes__row:nth-child(2n) {
+            position: absolute;
+            top: -($stripe_height / 1.5) + 40px;
+            left: ($stripe_width / 1.5) - 55px;
+        }
+    }
+}
+
+/* Stripes used on header of site */
+.container--stripes
+{
+    position: relative;
+
+    .stripes {
+        z-index:-1;
+        left: 60%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .stripes {
+            left: 60%;
+        }
+    }
+
+}
+
+/* Stripes used on header of site*/
+.site--stripes
+{
+    width:100%;
+    position: relative;
+
+    & > .stripes {
+        z-index: -1;
+        left: 46%;
+        top: -4%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        & > .stripes
+        {
+            z-index:-1;
+            left: 45%;
+            top: -8%;
+        }
+    }
+}

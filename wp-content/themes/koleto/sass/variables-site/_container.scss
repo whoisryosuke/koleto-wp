@@ -1,0 +1,62 @@
+/*******************************
+            Container
+*******************************/
+/* Rendered Scrollbar Width */
+
+$scrollbarWidth: 17px;
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+$mobileBreakpoint : 320px;
+$tabletBreakpoint : 768px;
+$computerBreakpoint : 992px;
+$largeMonitorBreakpoint : 1200px;
+$widescreenMonitorBreakpoint : 1920px;
+
+/* Responsive */
+
+$largestMobileScreen : ($tabletBreakpoint - 1px);
+$largestTabletScreen : ($computerBreakpoint - 1px);
+$largestSmallMonitor : ($largeMonitorBreakpoint - 1px);
+$largestLargeMonitor : ($widescreenMonitorBreakpoint - 1px);
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Minimum Gutter is used to determine  the maximum container width for a given device */
+
+$maxWidth: 100%;
+/* Devices */
+
+$mobileMinimumGutter: 0em;
+$mobileWidth: auto;
+$mobileGutter: 1em;
+$tabletMinimumGutter: ($emSize * 1);
+$tabletWidth: $tabletBreakpoint - ($tabletMinimumGutter * 2) - $scrollbarWidth;
+$tabletGutter: auto;
+$computerMinimumGutter: ($emSize * 1.5);
+$computerWidth: $computerBreakpoint - ($computerMinimumGutter * 2) - $scrollbarWidth;
+$computerGutter: auto;
+$largeMonitorMinimumGutter: ($emSize * 2);
+$largeMonitorWidth: $largeMonitorBreakpoint - ($largeMonitorMinimumGutter * 2) - $scrollbarWidth;
+$largeMonitorGutter: auto;
+/* Coupling (Add Negative Margin to container size) */
+
+$gridGutterWidth: 2rem;
+$relaxedGridGutterWidth: 3rem;
+$veryRelaxedGridGutterWidth: 5rem;
+$mobileGridWidth: $mobileWidth;
+$tabletGridWidth: calc(#{$tabletWidth} + #{$gridGutterWidth});
+$computerGridWidth: calc(#{$computerWidth} + #{$gridGutterWidth});
+$largeMonitorGridWidth: calc(#{$largeMonitorWidth} + #{$gridGutterWidth});
+$mobileRelaxedGridWidth: $mobileWidth;
+$tabletRelaxedGridWidth: calc(#{$tabletWidth} + #{$relaxedGridGutterWidth});
+$computerRelaxedGridWidth: calc(#{$computerWidth} + #{$relaxedGridGutterWidth});
+$largeMonitorRelaxedGridWidth: calc(#{$largeMonitorWidth} + #{$relaxedGridGutterWidth});
+$mobileVeryRelaxedGridWidth: $mobileWidth;
+$tabletVeryRelaxedGridWidth: calc(#{$tabletWidth} + #{$veryRelaxedGridGutterWidth});
+$computerVeryRelaxedGridWidth: calc(#{$computerWidth} + #{$veryRelaxedGridGutterWidth});
+$largeMonitorVeryRelaxedGridWidth: calc(#{$largeMonitorWidth} + #{$veryRelaxedGridGutterWidth});

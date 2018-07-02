@@ -1,0 +1,53 @@
+.segment
+{
+    padding:2rem;
+    margin:3rem 0;
+    background: #FFFFFF;
+    box-shadow: 0 5px 11px 0 rgba(38, 59, 92, 0.10);
+    border-radius: 12px;
+
+    &.basic
+    {
+        background:transparent;
+        box-shadow:none;
+    }
+    
+    &.padded
+    {
+        padding:4rem;
+    }
+    
+    &.very.padded
+    {
+        padding:6rem;
+    }
+}
+
+.segment.icons
+{
+    margin-top:10rem;
+
+    .row 
+    {
+        margin-top:-10rem;
+        .column
+        {
+            &:nth-child(2n) figure {
+                background: $color__gradient-secondary;
+            }
+
+            &:nth-child(3n) figure {
+                background: $color__gradient-tertiary;
+            }
+        }
+        figure
+        {
+            max-width:13rem;
+            max-height:13rem;
+            margin:auto;
+            padding:3rem;
+            background: $color__gradient-primary;
+            border-radius:50%;
+        }
+    }
+}

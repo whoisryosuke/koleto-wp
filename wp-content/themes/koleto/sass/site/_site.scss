@@ -1,0 +1,103 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+/*--------------------------------------------------------------
+## Animation
+* Using Animate.CSS for animation
+* see docs here: https://github.com/daneden/animate.css
+--------------------------------------------------------------*/
+
+/* Elements that aren't animated are put opaque, since display:none
+* messes with layout. Then using js, we remove this class 
+* and add animation classes */
+.not-animated
+{
+    opacity:0;
+}
+
+.animated
+{
+    &.first
+    {
+        -ms-animation-delay: $animation_delay;
+        -moz-animation-delay: $animation_delay;
+        -webkit-animation-delay: $animation_delay;
+        animation-delay: $animation_delay;
+    }
+
+    &.second {
+        -ms-animation-delay:$animation_delay * 2;
+        -moz-animation-delay: $animation_delay * 2;
+        -webkit-animation-delay: $animation_delay * 2;
+        animation-delay: $animation_delay * 2;
+    }
+
+    &.third {
+        -ms-animation-delay:$animation_delay * 3;
+        -moz-animation-delay: $animation_delay * 3;
+        -webkit-animation-delay: $animation_delay * 3;
+        animation-delay: $animation_delay * 3;
+    }
+}
+
+/*--------------------------------------------------------------
+## Alignment
+--------------------------------------------------------------*/
+
+.centered
+{
+    text-align:center;
+}
+
+.text-right
+{
+    text-align:right;
+}
+
+/*--------------------------------------------------------------
+## Padding
+--------------------------------------------------------------*/
+
+.padded
+{
+    padding:2rem;
+}
+
+.very.padded
+{
+    padding:4rem;
+}
+
+/*--------------------------------------------------------------
+## Flexbox
+--------------------------------------------------------------*/
+
+.flex 
+{
+    display: flex;
+}
+
+.column.half
+{
+    @include column-width(3)
+}
+
+/* A fix for the stripes overflow in the header (outside of overflow boxes) */
+.site
+{
+    overflow: hidden;
+}
+.content-area
+{
+    padding-top:4rem;
+}

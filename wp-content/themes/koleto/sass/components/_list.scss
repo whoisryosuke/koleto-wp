@@ -1,0 +1,23 @@
+.list
+{
+    .item
+    {
+        display:flex;
+    }
+
+    .icon
+    {
+        img, i, svg
+        {
+            margin-right:1rem;
+        }
+
+        img, i, svg, p
+        {
+            display:inline-block;
+            margin-top:1rem;
+            margin-bottom:1rem;
+            vertical-align: middle;
+        }
+    }
+}

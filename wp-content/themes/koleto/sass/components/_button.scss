@@ -1,0 +1,39 @@
+.button
+{
+    color:#FFF;
+    background: #EE486B;
+    border-radius: $button_radius;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1rem 3rem;
+    display:inline-block;
+    position: relative;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: transform .2s linear, background-color .3s linear;
+
+    &:visited {
+        background-color:#EE486B;
+        color: #FFF;
+    }
+    
+    &:hover
+    {
+        color:#FFF;
+        background-color:rgb(250, 111, 141);
+        -webkit-transform: translateY(-5%);
+        transform: translateY(-5%);
+        cursor: pointer;
+    }
+    &:active {
+        background-color:rgb(206, 39, 75);
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+    }
+
+    &.wide
+    {
+        display:block;
+        text-align:center;
+    }
+}
