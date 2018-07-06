@@ -8,13 +8,14 @@
     display:flex;
     justify-content: space-between;
 
+
     .header__menu
     {
         display:inline-block;
 
         .menu
         {
-            margin-top:1rem;
+            margin-top:1.5rem;
             margin-right:1rem;
             
             a {
@@ -27,13 +28,76 @@
 
     .logo
     {
+        a
+        {
+            display:block;
+            margin: 0.5rem 1rem;
+        }
+        img
+        {
+            max-height:50px;
+        }
         svg
         {
-            width:50%;
-            margin-top:1rem;
-            margin-left:1rem;
+            width:auto;
+            max-height:50px;
+
+            path,
+            polygon
+            {
+                transition:fill .2s linear;
+            }
+
+            &:hover path,
+            &:hover polygon
+            {
+                // Fill with color (animated 60FPS)
+                fill:$color__primary
+
+                // Fill with gradient, but not animated
+                // fill: url(#linearGradient-2)
+            }
         }
     }
+
+    &.sticky 
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index:420;
+        background-image:$color__gradient-primary;
+
+        // @todo: animate transform: translateY to scroll down once when sticky class is applied
+
+        .logo {
+            display:inline-block;
+
+            svg {
+                path,
+                polygon {
+                    fill:#FFF;
+                    opacity:0.7;
+                    transition: opacity .2s linear;
+                }
+                &:hover path,
+                &:hover polygon {
+                    // Fill with color (animated 60FPS)
+                    fill: #FFF;
+                    opacity:1;
+                    
+                    // Fill with gradient, but not animated
+                    // fill: url(#linearGradient-2)
+                }
+            }
+        }
+    }
+
+}
+
+.sticky + .content
+{
+    padding-top: 60px;
 }
 
 .admin-bar .header

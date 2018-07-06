@@ -2,6 +2,12 @@
 
 ## Development
 
+### Production
+
+Project is setup for git deployment to WP-Engine. Just push master to prod.
+
+`git push production master`
+
 ### Docker
 
 Uses Wordpress Docker image and MariaDB to spin up a Wordpress compatible container.
@@ -56,3 +62,8 @@ Uses animate.css library with waypoints.js for scroll-activated animations.
 
 * First items on page have animate.css classes added
 * Anything you want animated beyond "the fold" has a `.not-animated` class added to it, which makes it transparent (not visible). Add an unique ID to the element. The go to the waypoints file (`~theme/js/frontpage.js`) and use the current function as a basis (removes `.not-animated` class and adds necessary classes -- IE8 friendly!)
+
+
+### Icons
+
+Icon font uses assorted icons from Font Awesome 4.4 and other sets. Any icons that is SVG has to be SVG because of the lack of multi-color functionality on icon fonts (they can be converted to static images if necessary though).
