@@ -39,7 +39,7 @@
             </section> 
 
             <!-- SIMPLE TEXT -->
-            <section id="about" class="hero centered container not-animated">
+            <section id="team" class="hero centered container not-animated">
                 <section class="segment basic padded">
                     <h1>
                         Effective Solutions for your Demanding Needs
@@ -136,19 +136,22 @@
 
                     <section class="customer-logos slider">
                         <div class="slide">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Yahoo_Finance_Logo_2013.png" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-01.svg" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://mammothmicrobes.com/wp-content/uploads/2016/06/News_NewCannabisVenture_detail.jpg" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-02.svg" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://haverfordquality.com/wp-content/uploads/2018/01/media-MarketWatch.jpg" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-03.svg" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/New_Bloomberg_Logo.svg" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-04.svg" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/NewYorkTimes.svg" alt="" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-05.svg" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Featured/Koleto-Logos-06.svg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -186,9 +189,9 @@
                     <section class="col-lg-6 text">
                         <aside class="segment padded">
                             <h3>Veterinary</h3>
-                            <p>By consistently delivering the highest standards of quality, professionalism and integrity, our goal is to become the partner of choice for veterinarians, producers and animal owners</p>
+                            <p>By consistently delivering the highest standards of quality, professionalism and integrity, our goal is to become the partner of choice for veterinarians, producers and animal owners.</p>
                             <p>
-                                Our products and services enable pets and people to enjoy their time together and will help keep livestock healthy to ensure a safe, wholesome and affordable food supply.
+                                Our products and services enable pets and people to enjoy their time together and will help keep livestock healthy to ensure a safe and wholesome experience.
                             </p>
                         </aside>
                     </section>
@@ -200,7 +203,7 @@
 
 
 
-            <section id="vision" class="hero hero--stripes overflow left primary-g not-animated">
+            <section id="safety" class="hero hero--stripes overflow left primary-g not-animated">
                 <div class="stripes primary">
                     <div class="stripes__row">
                         <div class="stripe"></div>
@@ -234,7 +237,7 @@
                     <section class="col-sm-12">
                         <h2>Leadership</h2>
                     </section>
-                    <section class="col-md-6 col-md-4">
+                    <section class="col-lg-4">
                         <div class="segment">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/nick-kovacevich-ceo.jpg" alt="Nick Kovacevich in profile" />
                             <h3>
@@ -244,17 +247,17 @@
                             <p>In his role as CEO for Kush Bottles, Nick directs all business relations and financial strategy for the company. Nick also oversees the organization’s senior management team. Nick has been integral in making critical strategic, growth, and financial decisions since the company’s inception.</p>
                         </div>
                     </section>
-                    <section class="col-md-6 col-md-4">
+                    <section class="col-lg-4">
                         <div class="segment">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/jim_ir.webp" alt="Rodrigo de Oliveira" />
                             <h3>
                                 Jim McCormick
                                 <span class="subtitle">Chief Financial Officer & Chief Operating Officer</span>                                
                             </h3>
-                            <p>Jim McCormick has extensive CFO and general management experience and has demonstrated financial and strategic leadership in his previous roles in the cannabis and tobacco industries. Mr. McCormick spent the majority of his career at British American Tobacco where he held multiple general management and CFO roles internationally over his sixteen-year tenure with the firm. Prior to this role, he was CFO at Electronic Cigarettes Group International.</p>
+                            <p>Jim McCormick has extensive CFO and general management experience and has demonstrated financial and strategic leadership in his previous roles in the cannabis and tobacco industries. Mr. McCormick spent the majority of his career at British American Tobacco.</p>
                         </div>
                     </section>
-                    <section class="col-md-6 col-md-4">
+                    <section class="col-lg-4">
                         <div class="segment">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/edd_pratt_ir.webp" alt="Edd Pratt in profile" />
                             <h3>
@@ -268,42 +271,6 @@
                         <p>Koleto’s procurement and production operates with the mission to ensure uninterrupted supply of services and goods through reliable, safe, and efficient processes. We want to maintain a vision to leverage our talent and resources to provide sustainable competitive advantage through our innovative solutions and partnerships.</p>
                     </section>
                 </div>
-            </section>
-
-
-
-            <!-- CTA - STRIPES (RIGHT) ++ BOX w/ -->
-            <section id="mission" class="hero hero--stripes right purple not-animated">
-                <div class="stripes primary">
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                </div>
-                <section class="container">
-                    <div class="row">
-                        <section class="col-lg-6">
-                            <aside class="segment padded">
-                                <h3>Uncompromising Quality</h3>
-                                <p>Our dedication to quality in everything we do is uncompromising, and covers every stage of the development, production and marketing of our packaging solutions. From the supply of materials through manufacturing and approval by the strictest authorities in the world.</p>
-                                <p>
-                                    Our passion for excellence drives us to continually improve practices so that processes and procedures are continuously updated.
-                                </p>
-                                <p>
-                                    With a global presence, timely, reliable and cost-effective distribution is critical to our customers’ ability to provide their end consumers with safe and effective products at the right time.
-                                </p>
-                            </aside>
-                        </section>
-                    </div>
-                </section>
             </section>
 
 
