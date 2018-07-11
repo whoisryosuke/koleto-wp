@@ -99,7 +99,7 @@
 					<li><button name="team">Our Team</button></li>
 					<li><button name="solutions">Solutions</button></li>
 					<li><button name="industries">Industries</button></li>
-					<li><button name="sbuttonfety">Safety</button></li>
+					<li><button name="safety">Safety</button></li>
 					<li><button name="leadership">Leadership</button></li>
 				</ul>
 			</div>
@@ -132,7 +132,6 @@
 		}
 
 		function smoothScroll(event) {
-			console.log('clicked ')
 			document.querySelector('#' + event.target.name).scrollIntoView({ 
 				behavior: 'smooth' 
 			});

@@ -76,8 +76,8 @@ waypointsArray.forEach(function (waypointName) {
                     this.element.className += ' animated';
                     this.element.className += ' fadeIn';
                 }
-                console.log('Scrolled to waypoint!')
-                console.log(this.element)
+                // console.log('Scrolled to waypoint!')
+                // console.log(this.element)
             },
             offset: 600
         });

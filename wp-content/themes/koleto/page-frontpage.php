@@ -26,7 +26,7 @@
                 </div>
             </div>
             <section class="hero">
-                <section class="container">
+                <section id="about" class="container">
                     <div class="row">
                         <section class="col-sm-10 col-md-8 col-lg-5">
                             <h1 class="animated fadeIn">Innovative Packaging Solutions for Cannabis, CBD and Modern Medicine</h1>
@@ -158,7 +158,7 @@
             </section>
 
             <!-- TWO COLUMN IMAGE GRID -->
-            <section id="industries" class="image-grid container not-animated">
+            <section id="industries" style="position:relative;" class="image-grid container not-animated">
 
                 <h1 class="centered">Industries</h1>
                 <div class="row right">
