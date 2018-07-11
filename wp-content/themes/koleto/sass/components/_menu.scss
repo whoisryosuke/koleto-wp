@@ -9,3 +9,11 @@
         }
     }
 }
+
+#primary-menu
+{
+    @include media-breakpoint-down(md) {
+        display:none;
+    }
+
+}

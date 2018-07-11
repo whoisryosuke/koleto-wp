@@ -585,12 +585,24 @@ i.icon, img.icon, svg.icon {
     .segment.icons .row .column:nth-child(3n) figure {
       background: linear-gradient(-135deg, #AB1A38 0%, #EE486B 100%); }
     .segment.icons .row figure {
+      min-width: 13rem;
       max-width: 13rem;
-      max-height: 13rem;
       margin: auto;
       padding: 3rem;
       background: linear-gradient(-134deg, #6C3F98 0%, #EE486B 100%);
       border-radius: 50%; }
+      @media (max-width: 991.98px) {
+        .segment.icons .row figure {
+          min-width: 8rem;
+          max-width: 8rem;
+          padding: 2rem; }
+          .segment.icons .row figure svg {
+            max-width: 3rem;
+            max-height: 3rem; } }
+
+/* Fixes issue where nested segment boxes cause excessive padding */
+.container > .segment {
+  margin-bottom: 0; }
 
 .split-rows {
   position: relative;
@@ -756,17 +768,23 @@ i.icon, img.icon, svg.icon {
   min-height: 6rem;
   position: absolute;
   top: 0;
+  z-index: 420;
   display: flex;
   justify-content: space-between; }
   .header .header__menu {
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem; }
     .header .header__menu .menu {
-      margin-top: 1.5rem;
+      margin-top: 0.75rem;
       margin-right: 1rem; }
-      .header .header__menu .menu a {
+      .header .header__menu .menu a,
+      .header .header__menu .menu button {
         color: #FFF;
         text-decoration: none;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        border: 0;
+        background: transparent; }
   .header .logo a {
     display: block;
     margin: 0.5rem 1rem; }
@@ -798,16 +816,96 @@ i.icon, img.icon, svg.icon {
       .header.sticky .logo svg:hover polygon {
         fill: #FFF;
         opacity: 1; }
+  @media (max-width: 767.98px) {
+    .header {
+      min-height: 4.5rem; } }
 
 .sticky + .content {
   padding-top: 60px; }
 
-.admin-bar .header {
-  padding-top: 2rem; }
+@media (min-width: 768px) {
+  .admin-bar .header {
+    padding-top: 2rem; } }
+
+/*--------------------------------------------------------------
+## Mobile Menu
+--------------------------------------------------------------*/
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-134deg, #6C3F98 0%, #EE486B 100%);
+  z-index: 400;
+  padding: 20% 0%;
+  font-size: 2.5rem;
+  color: #FFF;
+  transform: translateX(100%);
+  transition: transform 200ms linear; }
+  .mobile-menu.active {
+    transform: translateX(0); }
+  .mobile-menu a,
+  .mobile-menu a:visited,
+  .mobile-menu button {
+    color: #FFF;
+    text-decoration: none;
+    border: 0;
+    background: transparent;
+    font-size: 2.5rem; }
+  .mobile-menu ul {
+    margin: 0; }
+  .mobile-menu li {
+    width: 100%;
+    display: block; }
+
+.mobile-menu-btn {
+  width: 50px;
+  height: 33px;
+  display: block;
+  position: relative; }
+  .mobile-menu-btn input[type=checkbox] {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    opacity: 0; }
+    .mobile-menu-btn input[type=checkbox]:checked + .ham :nth-child(1) {
+      transform: translateY(14px) rotate(45deg); }
+    .mobile-menu-btn input[type=checkbox]:checked + .ham :nth-child(2) {
+      transform: rotate(45deg); }
+    .mobile-menu-btn input[type=checkbox]:checked + .ham :nth-child(3) {
+      transform: translateY(-14px) rotate(-45deg); }
+  .mobile-menu-btn .ham {
+    z-index: 1; }
+    .mobile-menu-btn .ham .line {
+      width: 50px;
+      height: 5px;
+      background: radial-gradient(62% -6%, #6C3F98 0%, #AE5AFF 100%);
+      display: block;
+      margin: 9px auto;
+      border-radius: 25px;
+      transition: all 0.2s ease-in-out; }
+    .mobile-menu-btn .ham.active .line:nth-child(1) {
+      transform: translateY(14px) rotate(45deg); }
+    .mobile-menu-btn .ham.active .line:nth-child(2) {
+      transform: rotate(45deg); }
+    .mobile-menu-btn .ham.active .line:nth-child(3) {
+      transform: translateY(-14px) rotate(-45deg); }
+  @media (min-width: 992px) {
+    .mobile-menu-btn {
+      display: none; } }
 
 .menu > ul li {
   display: inline-block;
   margin-right: 1rem; }
+
+@media (max-width: 991.98px) {
+  #primary-menu {
+    display: none; } }
 
 .button {
   color: #FFF;
@@ -846,18 +944,19 @@ i.icon, img.icon, svg.icon {
   /* Both the .row and .image need the .right class to make it work */ }
   .image-grid .row.right {
     flex-direction: row-reverse; }
-  .image-grid .row .image {
-    z-index: -1;
-    /* Both the .row and .image need the .right class to make it work */ }
-    .image-grid .row .image.right img {
-      float: right; }
-  .image-grid .row .text {
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .image-grid .row .text.right {
-      left: auto;
-      right: 0; }
+  @media (min-width: 992px) {
+    .image-grid .row .image {
+      z-index: -1;
+      /* Both the .row and .image need the .right class to make it work */ }
+      .image-grid .row .image.right img {
+        float: right; }
+    .image-grid .row .text {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .image-grid .row .text.right {
+        left: auto;
+        right: 0; } }
 
 .footer {
   color: #FFF;

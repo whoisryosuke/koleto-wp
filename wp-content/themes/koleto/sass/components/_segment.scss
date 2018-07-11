@@ -42,12 +42,31 @@
         }
         figure
         {
+            min-width:13rem;
             max-width:13rem;
-            max-height:13rem;
             margin:auto;
             padding:3rem;
             background: $color__gradient-primary;
             border-radius:50%;
+            
+            @include media-breakpoint-down(md) {
+                & {
+                    min-width: 8rem;
+                    max-width: 8rem;
+                    padding:2rem;
+
+                    svg {
+                        max-width:3rem;
+                        max-height:3rem;
+                    }
+                }
+            }
         }
     }
+}
+
+/* Fixes issue where nested segment boxes cause excessive padding */
+.container > .segment
+{
+    margin-bottom:0;
 }

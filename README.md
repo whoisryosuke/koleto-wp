@@ -67,3 +67,8 @@ Uses animate.css library with waypoints.js for scroll-activated animations.
 ### Icons
 
 Icon font uses assorted icons from Font Awesome 4.4 and other sets. Any icons that is SVG has to be SVG because of the lack of multi-color functionality on icon fonts (they can be converted to static images if necessary though).
+
+
+### Slider ([slick.js](https://github.com/kenwheeler/slick/))
+
+Slider JS in frontpage template.

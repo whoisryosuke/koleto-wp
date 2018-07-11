@@ -78,14 +78,69 @@
 		</div><!-- .logo -->
 
 		<nav id="site-navigation" class="header__menu">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'koleto' ); ?></button>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'koleto' ); ?></button> -->
+			<div id="mobileMenuBtn" class="mobile-menu-btn">
+				<input type="checkbox" />
+				<div class="ham">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+			// wp_nav_menu( array(
+			// 	'theme_location' => 'menu-1',
+			// 	'menu_id'        => 'primary-menu',
+			// ) );
 			?>
+			<div id="primary-menu" class="menu">
+				<ul>
+					<li><button name="about">About</button></li>
+					<li><button name="team">Our Team</button></li>
+					<li><button name="solutions">Solutions</button></li>
+					<li><button name="industries">Industries</button></li>
+					<li><button name="sbuttonfety">Safety</button></li>
+					<li><button name="leadership">Leadership</button></li>
+				</ul>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- .header -->
+	<nav id="mobileMenu" class="mobile-menu">
+		<?php
+		// wp_nav_menu( array(
+		// 	'theme_location' => 'menu-1',
+		// 	'menu_id'        => 'mobile-menu',
+		// ) );
+		?>
+		<div id="mobile-menu" class="menu">
+			<ul>
+				<li><button name="about">About</button></li>
+				<li><button name="team">Our Team</button></li>
+				<li><button name="solutions">Solutions</button></li>
+				<li><button name="industries">Industries</button></li>
+				<li><button name="safety">Safety</button></li>
+				<li><button name="leadership">Leadership</button></li>
+			</ul>
+		</div>
+	</nav>
+	<script>
+		document.getElementById('mobileMenuBtn').onclick = function() {
+			var mobileMenu = document.getElementById('mobileMenu');
+
+			mobileMenu.classList.toggle('active')
+			
+		}
+
+		function smoothScroll(event) {
+			console.log('clicked ')
+			document.querySelector('#' + event.target.name).scrollIntoView({ 
+				behavior: 'smooth' 
+			});
+		}
+
+		document.querySelectorAll('.menu li button').forEach(function(button) {
+			button.onclick = smoothScroll
+		});
+	</script>
 
 	<div id="content" class="site-content">
