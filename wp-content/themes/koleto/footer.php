@@ -84,11 +84,19 @@
 		button.onclick = smoothScroll
 	});
 
+	var checkExist = setInterval(function() {
+	if ($('.ao-form').first()) {
+		console.log("Exists!");
+		clearInterval(checkExist);
+	}
+	}, 100); // check every 100ms
+
 	document.querySelectorAll('.ao-form-field').forEach(function(input) {
+		console.log(input)
 		input.onclick = hideLabel
 	});
 
-	document.getElementById('aboutBtn').onclick = smoothScroll
+	// document.getElementById('aboutBtn').onclick = smoothScroll
 	document.getElementById('contactBtn').onclick = smoothScroll
 
 </script>
