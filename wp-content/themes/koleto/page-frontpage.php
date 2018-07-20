@@ -175,28 +175,9 @@
                         </div>
                     </section>
                     <section class="col-md-6">
-                        <form class="segment basic">
-                            <div class="field">
-                                <label>Name</label>
-                                <input type="text" placeholder="Name" name="name" />
-                            </div>
-                            <div class="field">
-                                <label>Email</label>
-                                <input type="email" placeholder="Email" name="email" />
-                            </div>
-                            <div class="field">
-                                <label>Phone Number</label>
-                                <input type="text" placeholder="(710) 420-7100" name="phone" />
-                            </div>
-                            <div class="field">
-                                <label>Message</label>
-                                <textarea name="message" placeholder="Message" rows="4" cols="50"></textarea>
-                            </div>
-                            <a href="#" class="button wide">
-                                GET IN CONTACT
-                            </a>
-                        </form>
-                        <script type="text/javascript" id="aoform-script-1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001">!function(o,t,e,a){o._aoForms=o._aoForms||[],o._aoForms.push(a);var n=function(){var o=t.createElement(e);o.src=("https:"==t.location.protocol?"https://":"http://")+"mktg.kushbottles.com/acton/content/form_embed.js",o.async=!0;for(var a=t.getElementsByTagName(e)[0],n=a.parentNode,c=document.getElementsByTagName("script"),r=!1,s=0;s<c.length;s++){if(c[s].getAttribute("src")==o.getAttribute("src"))r=!0;}r?typeof(_aoFormLoader)!="undefined"?_aoFormLoader.load({id:"1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false}):"":n.insertBefore(o,a)};window.attachEvent?window.attachEvent("onload",n):window.addEventListener("load",n,!1),n()}(window,document,"script",{id:"1317fbb9-aa39-44d8-b0ad-fef19611414b",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false});</script>
+                        <div class="segment basic">
+                            <script type="text/javascript" id="aoform-script-1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001">!function(o,t,e,a){o._aoForms=o._aoForms||[],o._aoForms.push(a);var n=function(){var o=t.createElement(e);o.src=("https:"==t.location.protocol?"https://":"http://")+"mktg.kushbottles.com/acton/content/form_embed.js",o.async=!0;for(var a=t.getElementsByTagName(e)[0],n=a.parentNode,c=document.getElementsByTagName("script"),r=!1,s=0;s<c.length;s++){if(c[s].getAttribute("src")==o.getAttribute("src"))r=!0;}r?typeof(_aoFormLoader)!="undefined"?_aoFormLoader.load({id:"1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false}):"":n.insertBefore(o,a)};window.attachEvent?window.attachEvent("onload",n):window.addEventListener("load",n,!1),n()}(window,document,"script",{id:"1317fbb9-aa39-44d8-b0ad-fef19611414b",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false});</script>
+                        </div>
                     </section>
                 </div>
             </section>
