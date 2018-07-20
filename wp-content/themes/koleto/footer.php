@@ -50,6 +50,65 @@
 </div><!-- #page -->
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css" type="text/css" media="all" />
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/waypoints.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/frontpage.js" type="text/javascript"></script>
+<script>
+	document.getElementById('mobileMenuBtn').onclick = function() {
+		var mobileMenu = document.getElementById('mobileMenu');
+		var logo = document.getElementById('logo');
+
+		mobileMenu.classList.toggle('active')
+		logo.classList.toggle('active')
+		
+	}
+
+	function smoothScroll(event) {
+		document.querySelector('#' + event.target.name).scrollIntoView({ 
+			behavior: 'smooth' 
+		});
+		console.log(event.target.name)
+	}
+
+
+	document.querySelectorAll('.menu li button').forEach(function(button) {
+		button.onclick = smoothScroll
+	});
+
+	document.getElementById('aboutBtn').onclick = smoothScroll
+	document.getElementById('contactBtn').onclick = smoothScroll
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        speed: 600,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
 <?php wp_footer(); ?>
 
 </body>

@@ -76,16 +76,42 @@
 
     & > .stripes {
         z-index: -1;
-        left: 46%;
-        top: -4%;
+        left: 82%;
+        top: -9%;
     }
 
+
+    @include media-breakpoint-up(md) {
+        &>.stripes {
+            left: 33%;
+            top: -9%;
+        }
+    }
     @include media-breakpoint-up(xl) {
         & > .stripes
         {
-            z-index:-1;
-            left: 45%;
-            top: -9%;
+            left: 42%;
+            top: -29%;
+        }
+    }
+
+    &.right {
+        &>.stripes {
+            left: 25%;
+            top: -10%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            &>.stripes {
+                left: 35%;
+                top: -15%;
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            &>.stripes {
+                left: 45%;
+                top: -19%;
+            }
         }
     }
 }

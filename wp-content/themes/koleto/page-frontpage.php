@@ -25,15 +25,15 @@
                     <div class="stripe"></div>
                 </div>
             </div>
-            <section class="hero">
-                <section id="about" class="container">
+            <section id="about" class="hero">
+                <section class="container">
                     <div class="row">
                         <section class="col-sm-10 col-md-8 col-lg-5">
                             <h1 class="animated fadeIn">Innovative Packaging Solutions for Cannabis, CBD and Modern Medicine</h1>
                             <p class="animated fadeIn first">Creating the bridge between compliant and safe packaging with innovative state of the art technology and products.</p>
-                            <a href="#" class="button animated fadeIn second">
+                            <button id="contactBtn" name="contact" class="button animated fadeIn second">
                                 Learn more
-                            </a>
+                            </button>
                         </section>
                 </section> 
             </section> 
@@ -157,147 +157,6 @@
                 </div>
             </section>
 
-            <!-- TWO COLUMN IMAGE GRID -->
-            <section id="industries" style="position:relative;" class="image-grid container not-animated">
-
-                <h1 class="centered">Industries</h1>
-                <div class="row right">
-                    <section class="col-lg-6 text">
-                        <aside class="segment padded">
-                            <h3>Cannabis + CBD</h3>
-                            <p>
-                                Broadly applicable products, capable of being transformed into a multitude of balms, food and more- we are prepared to handle any nuanced components of your project.
-                            </p>
-                        </aside>
-                    </section>
-                    <section class="col-lg-8 image right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Photos/veterinary.jpg" alt="" />
-                    </section>
-                </div>
-                <div class="row">
-                    <section class="col-lg-8 image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Photos/bottles.jpg" alt="" />
-                    </section>
-                    <section class="col-lg-6 text right">
-                        <aside class="segment padded">
-                            <h3>Pharmaceuticals</h3>
-                            <p>It can be challenging for companies to keep up with effective and appropriate paths for their products. The industry is pouring tens of billions of dollars into the research that our team understands to provide effective and appropriate packaging for your product.</p>
-                        </aside>
-                    </section>
-                </div>
-                <div class="row right">
-                    <section class="col-lg-6 text">
-                        <aside class="segment padded">
-                            <h3>Veterinary</h3>
-                            <p>By consistently delivering the highest standards of quality, professionalism and integrity, our goal is to become the partner of choice for veterinarians, producers and animal owners.</p>
-                            <p>
-                                Our products and services enable pets and people to enjoy their time together and will help keep livestock healthy to ensure a safe and wholesome experience.
-                            </p>
-                        </aside>
-                    </section>
-                    <section class="col-lg-8 image right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Photos/veterinary.jpg" alt="" />
-                    </section>
-                </div>
-            </section>
-
-
-
-            <section id="safety" class="hero hero--stripes overflow left primary-g not-animated">
-                <div class="stripes primary">
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                </div>
-                <section class="container">
-                    <div class="row">
-                        <section class="offset-md-4 col-md-8 offset-lg-6 col-lg-6">
-                            <aside class="segment">
-                                <h3>Patient Safety is Our Focus</h3>
-                                <p>While innovation is the forethought in the development of a unique product and technology the patient must also be accounted for. </p>
-
-                                <p>While we take all measures to provide safe and effective products- at Koleto, our team is constantly working to push the capabilities of our production to remove any possible risks. We want to ensure that you feel confident in the release once your product reaches your audience.</p>
-                            </aside>
-                        </section>
-                    </div>
-                </section>
-            </section>
-
-
-            <!-- 3x3 GRID - Leadership -->
-            <section id="leadership" class="container segment basic padded not-animated">
-                <div class="row centered">
-                    <section class="col-sm-12">
-                        <h2>Leadership</h2>
-                    </section>
-                    <section class="col-lg-4">
-                        <div class="segment">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/nick-kovacevich-ceo.jpg" alt="Nick Kovacevich in profile" />
-                            <h3>
-                                Nick Kovacevich
-                                <span class="subtitle">Chief Executive Officer</span>
-                            </h3>
-                            <p>In his role as CEO for Kush Bottles, Nick directs all business relations and financial strategy for the company. Nick also oversees the organization’s senior management team. Nick has been integral in making critical strategic, growth, and financial decisions since the company’s inception.</p>
-                        </div>
-                    </section>
-                    <section class="col-lg-4">
-                        <div class="segment">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/jim_ir.jpg" alt="Rodrigo de Oliveira" />
-                            <h3>
-                                Jim McCormick
-                                <span class="subtitle">Chief Financial Officer & Chief Operating Officer</span>                                
-                            </h3>
-                            <p>Jim McCormick has extensive CFO and general management experience and has demonstrated financial and strategic leadership in his previous roles in the cannabis and tobacco industries. Mr. McCormick spent the majority of his career at British American Tobacco.</p>
-                        </div>
-                    </section>
-                    <section class="col-lg-4">
-                        <div class="segment">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/edd_pratt_ir.jpg" alt="Edd Pratt in profile" />
-                            <h3>
-                                Edd Pratt
-                                <span class="subtitle">Executive Vice President</span>
-                            </h3>
-                            <p>Edd brings more than 30 years of sales, business development, and operations experience with several engineering and high-tech professional services companies. He most recently served as Chief Operating Officer at Wizard International, a provider of innovative and affordable solutions to the custom framing industry.</p>
-                        </div>
-                    </section>
-                    <section class="col-sm-12">
-                        <p>Koleto’s procurement and production operates with the mission to ensure uninterrupted supply of services and goods through reliable, safe, and efficient processes. We want to maintain a vision to leverage our talent and resources to provide sustainable competitive advantage through our innovative solutions and partnerships.</p>
-                    </section>
-                </div>
-            </section>
-
-
-            <section id="solutions" class="hero hero--stripes left primary-g not-animated">
-                <div class="stripes primary">
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                    <div class="stripes__row">
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                        <div class="stripe"></div>
-                    </div>
-                </div>
-                <section class="container">
-                    <div class="row">
-                        <section class="offset-sm-4 col-sm-8 offset-lg-6 col-lg-6">
-                            <aside class="segment">
-                                <h3>Prepared for the industry ahead</h3>
-                                <p>The markets change and fluctuate but the needs of your consumer and product are unique and need to be addressed. Koleto Packaging Solutions will be the innovator in CBD, Cannabis and Modern Medicine Packaging.</p>
-                            </aside>
-                        </section>
-                    </div>
-                </section>
-            </section>
         
             <section id="contact" class="container container--stripes not-animated">
                 <div class="stripes purple fade twist">
@@ -344,36 +203,5 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/waypoints.min.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/frontpage.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-<script>
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        speed: 600,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
 <?php
 get_footer();

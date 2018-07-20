@@ -95,12 +95,11 @@
 			?>
 			<div id="primary-menu" class="menu">
 				<ul>
-					<li><button name="about">About</button></li>
-					<li><button name="team">Our Team</button></li>
+					<li><a href="/about/" name="about">About</a></li>
+					<li><a href="/about/" name="services">Services</a></li>
 					<li><button name="solutions">Solutions</button></li>
-					<li><button name="industries">Industries</button></li>
-					<li><button name="safety">Safety</button></li>
-					<li><button name="leadership">Leadership</button></li>
+					<li><a href="/about/" name="safety">Safety</a></li>
+					<li><a href="/leadership/" name="leadership">Leadership</a></li>
 				</ul>
 			</div>
 		</nav><!-- #site-navigation -->
@@ -114,34 +113,13 @@
 		?>
 		<div id="mobile-menu" class="menu">
 			<ul>
-				<li><button name="about">About</button></li>
-				<li><button name="team">Our Team</button></li>
+				<li><a href="/about/" name="about">About</a></li>
+				<li><a href="/about/" name="services">Services</a></li>
 				<li><button name="solutions">Solutions</button></li>
-				<li><button name="industries">Industries</button></li>
-				<li><button name="safety">Safety</button></li>
-				<li><button name="leadership">Leadership</button></li>
+				<li><a href="/about/" name="safety">Safety</a></li>
+				<li><a href="/leadership/" name="leadership">Leadership</a></li>
 			</ul>
 		</div>
 	</nav>
-	<script>
-		document.getElementById('mobileMenuBtn').onclick = function() {
-			var mobileMenu = document.getElementById('mobileMenu');
-			var logo = document.getElementById('logo');
-
-			mobileMenu.classList.toggle('active')
-			logo.classList.toggle('active')
-			
-		}
-
-		function smoothScroll(event) {
-			document.querySelector('#' + event.target.name).scrollIntoView({ 
-				behavior: 'smooth' 
-			});
-		}
-
-		document.querySelectorAll('.menu li button').forEach(function(button) {
-			button.onclick = smoothScroll
-		});
-	</script>
 
 	<div id="content" class="site-content">

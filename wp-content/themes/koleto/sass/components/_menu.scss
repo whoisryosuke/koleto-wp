@@ -12,6 +12,14 @@
 
 #primary-menu
 {
+    button {
+        cursor: pointer;
+    }
+    
+    a 
+    {
+        font-size: 0.75rem;
+    }
     @include media-breakpoint-down(md) {
         display:none;
     }
