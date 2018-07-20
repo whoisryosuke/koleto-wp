@@ -92,7 +92,7 @@
 	}
 	}, 100); // check every 100ms
 
-	function formFixer() 
+	function formFixer() {
 		document.querySelectorAll('.ao-form-field').forEach(function(input) {
 			console.log(input)
 			input.onclick = hideLabel
