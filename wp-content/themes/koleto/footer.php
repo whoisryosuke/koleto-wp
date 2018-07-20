@@ -85,7 +85,7 @@
 	});
 
 	var checkExist = setInterval(function() {
-	if ($('.ao-form').first()) {
+	if ($('.ao-form-field').first()) {
 		console.log("Exists!");
 		formFixer()
 		clearInterval(checkExist);
