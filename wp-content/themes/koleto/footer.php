@@ -87,14 +87,17 @@
 	var checkExist = setInterval(function() {
 	if ($('.ao-form').first()) {
 		console.log("Exists!");
+		formFixer()
 		clearInterval(checkExist);
 	}
 	}, 100); // check every 100ms
 
-	document.querySelectorAll('.ao-form-field').forEach(function(input) {
-		console.log(input)
-		input.onclick = hideLabel
-	});
+	function formFixer() 
+		document.querySelectorAll('.ao-form-field').forEach(function(input) {
+			console.log(input)
+			input.onclick = hideLabel
+		});
+	}
 
 	// document.getElementById('aboutBtn').onclick = smoothScroll
 	document.getElementById('contactBtn').onclick = smoothScroll
