@@ -15,12 +15,12 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: $color__text-input;
-	border: 0;
-	padding: 0.8rem 1.25rem;
-	background: #FFFFFF;
-	box-shadow: 1px 3px 2px 0 rgba(131, 107, 157, 0.20);
-	border-radius: 15px;
-	margin-bottom:0.75rem;
+	border: 0 !important;
+	padding: 0.8rem 1.25rem !important;
+	background: #FFFFFF !important;
+	box-shadow: 1px 3px 2px 0 rgba(131, 107, 157, 0.20) !important;
+	border-radius: 15px !important;
+	margin-bottom:0.75rem !important;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -43,4 +43,22 @@ textarea {
 		width:100%;
 		display:block;
 	}
+}
+
+.ao-input-block,
+.ao-textarea-block
+{
+	position: relative;
+}
+
+.ao-form-label
+{
+	position: absolute;
+	top: 0.7rem;
+	left: 1.25rem;
+	color: #999;
+}
+
+.ao-form-submit {
+	width:100% !important;
 }

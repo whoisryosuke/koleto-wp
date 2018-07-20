@@ -72,9 +72,20 @@
 		console.log(event.target.name)
 	}
 
+	function hideLabel(event) {
+		var child = event.target.parentNode.getElementsByClassName('ao-form-label')[0]
+
+		child.classList.toggle('active')
+		console.log(event.target.name)
+	}
+
 
 	document.querySelectorAll('.menu li button').forEach(function(button) {
 		button.onclick = smoothScroll
+	});
+
+	document.querySelectorAll('.ao-form-field').forEach(function(input) {
+		input.onclick = hideLabel
 	});
 
 	document.getElementById('aboutBtn').onclick = smoothScroll

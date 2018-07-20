@@ -1,12 +1,13 @@
-.button
+.button,
+.ao-form-submit
 {
-    color:#FFF;
-    background: #EE486B;
-    border-radius: $button_radius;
+    color:#FFF !important;
+    background: #EE486B !important;
+    border-radius: $button_radius !important;
     text-transform: uppercase;
     text-decoration: none;
-    padding:1rem 3rem;
-    border:0;
+    padding:1rem 3rem !important;
+    border:0 !important;
     display:inline-block;
     position: relative;
     -webkit-transform: translateY(0);

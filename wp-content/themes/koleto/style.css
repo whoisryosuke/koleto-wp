@@ -935,33 +935,38 @@ i.icon, img.icon, svg.icon {
   #primary-menu {
     display: none; } }
 
-.button {
-  color: #FFF;
-  background: #EE486B;
-  border-radius: 85px;
+.button,
+.ao-form-submit {
+  color: #FFF !important;
+  background: #EE486B !important;
+  border-radius: 85px !important;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 3rem;
-  border: 0;
+  padding: 1rem 3rem !important;
+  border: 0 !important;
   display: inline-block;
   position: relative;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition: transform .2s linear, background-color .3s linear; }
-  .button:visited {
+  .button:visited,
+  .ao-form-submit:visited {
     background-color: #EE486B;
     color: #FFF; }
-  .button:hover {
+  .button:hover,
+  .ao-form-submit:hover {
     color: #FFF;
     background-color: #fa6f8d;
     -webkit-transform: translateY(-5%);
     transform: translateY(-5%);
     cursor: pointer; }
-  .button:active {
+  .button:active,
+  .ao-form-submit:active {
     background-color: #ce274b;
     -webkit-transform: translateY(5%);
     transform: translateY(5%); }
-  .button.wide {
+  .button.wide,
+  .ao-form-submit.wide {
     display: block;
     text-align: center; }
 
@@ -1070,12 +1075,12 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #666;
-  border: 0;
-  padding: 0.8rem 1.25rem;
-  background: #FFFFFF;
-  box-shadow: 1px 3px 2px 0 rgba(131, 107, 157, 0.2);
-  border-radius: 15px;
-  margin-bottom: 0.75rem; }
+  border: 0 !important;
+  padding: 0.8rem 1.25rem !important;
+  background: #FFFFFF !important;
+  box-shadow: 1px 3px 2px 0 rgba(131, 107, 157, 0.2) !important;
+  border-radius: 15px !important;
+  margin-bottom: 0.75rem !important; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -1106,6 +1111,19 @@ textarea {
 .field input {
   width: 100%;
   display: block; }
+
+.ao-input-block,
+.ao-textarea-block {
+  position: relative; }
+
+.ao-form-label {
+  position: absolute;
+  top: 0.7rem;
+  left: 1.25rem;
+  color: #999; }
+
+.ao-form-submit {
+  width: 100% !important; }
 
 /*--------------------------------------------------------------
 # Navigation
