@@ -6,6 +6,8 @@
 
 Project is setup for git deployment to WP-Engine. Just push master to prod.
 
+`git add *`
+`git commit -m "Your message"`
 `git push production master`
 
 ### Docker

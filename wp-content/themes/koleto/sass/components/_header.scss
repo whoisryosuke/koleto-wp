@@ -64,6 +64,14 @@
                 // fill: url(#linearGradient-2)
             }
         }
+
+        &.active {
+            path,
+            polygon
+            {
+                fill:#FFF;
+            }
+        }
     }
 
     &.sticky 
@@ -196,7 +204,7 @@
         .line {
             width: 50px;
             height: 5px;
-            background: $color__gradient-secondary-radial;
+            background: #FFF;
             display: block;
             margin: 9px auto;
             border-radius: 25px;

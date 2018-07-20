@@ -76,5 +76,11 @@
                 left: -60%;
             }
         }
+        @include media-breakpoint-up(lg) {
+            .stripes {
+                top: 20%;
+                left: -30%;
+            }
+        }
     }
 }

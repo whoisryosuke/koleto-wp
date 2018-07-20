@@ -249,7 +249,7 @@
                     </section>
                     <section class="col-lg-4">
                         <div class="segment">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/jim_ir.webp" alt="Rodrigo de Oliveira" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/jim_ir.jpg" alt="Rodrigo de Oliveira" />
                             <h3>
                                 Jim McCormick
                                 <span class="subtitle">Chief Financial Officer & Chief Operating Officer</span>                                
@@ -259,7 +259,7 @@
                     </section>
                     <section class="col-lg-4">
                         <div class="segment">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/edd_pratt_ir.webp" alt="Edd Pratt in profile" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/Leadership/edd_pratt_ir.jpg" alt="Edd Pratt in profile" />
                             <h3>
                                 Edd Pratt
                                 <span class="subtitle">Executive Vice President</span>
@@ -337,6 +337,7 @@
                                 GET IN CONTACT
                             </a>
                         </form>
+                        <script type="text/javascript" id="aoform-script-1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001">!function(o,t,e,a){o._aoForms=o._aoForms||[],o._aoForms.push(a);var n=function(){var o=t.createElement(e);o.src=("https:"==t.location.protocol?"https://":"http://")+"mktg.kushbottles.com/acton/content/form_embed.js",o.async=!0;for(var a=t.getElementsByTagName(e)[0],n=a.parentNode,c=document.getElementsByTagName("script"),r=!1,s=0;s<c.length;s++){if(c[s].getAttribute("src")==o.getAttribute("src"))r=!0;}r?typeof(_aoFormLoader)!="undefined"?_aoFormLoader.load({id:"1317fbb9-aa39-44d8-b0ad-fef19611414b:d-0001",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false}):"":n.insertBefore(o,a)};window.attachEvent?window.attachEvent("onload",n):window.addEventListener("load",n,!1),n()}(window,document,"script",{id:"1317fbb9-aa39-44d8-b0ad-fef19611414b",accountId:"29794",domain:"mktg.kushbottles.com",isTemp:false,noStyle:false,prefill:false});</script>
                     </section>
                 </div>
             </section>

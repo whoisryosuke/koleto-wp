@@ -25,9 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'koleto' ); ?></a>
 
 	<header id="SiteHeader" class="header">
-		<div class="logo">
+		<div id="logo" class="logo">
 			<?php
-			the_custom_logo();
+			// the_custom_logo();
 				?>
 			<? /* <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> */ ?>
 			<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Logo/koleto-logo.svg" alt="" /> -->
@@ -126,8 +126,10 @@
 	<script>
 		document.getElementById('mobileMenuBtn').onclick = function() {
 			var mobileMenu = document.getElementById('mobileMenu');
+			var logo = document.getElementById('logo');
 
 			mobileMenu.classList.toggle('active')
+			logo.classList.toggle('active')
 			
 		}
 

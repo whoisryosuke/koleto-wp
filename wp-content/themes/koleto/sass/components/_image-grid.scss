@@ -11,6 +11,20 @@
         /* Both the .row and .image need the .right class to make it work */
         &.right {
             flex-direction: row-reverse;
+
+
+            & > section {
+                display: flex;
+                flex-direction: row;
+                align-items:flex-start;
+                align-content:flex-start;
+            }
+            & > section:first-child {
+                order:2;
+            }
+            & > section:nth-child(2n) {
+                order:1;
+            }
         }
         
         @include media-breakpoint-up(lg) {
@@ -22,6 +36,7 @@
                 /* Both the .row and .image need the .right class to make it work */
                 &.right
                 {
+                    order: 2;
                     img {
                         float:right;
                     }

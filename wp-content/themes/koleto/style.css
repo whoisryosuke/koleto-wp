@@ -706,6 +706,10 @@ i.icon, img.icon, svg.icon {
     .hero--stripes.left .stripes {
       top: 20%;
       left: -60%; } }
+  @media (min-width: 992px) {
+    .hero--stripes.left .stripes {
+      top: 20%;
+      left: -30%; } }
 
 .stripes {
   z-index: 0;
@@ -799,6 +803,9 @@ i.icon, img.icon, svg.icon {
     .header .logo svg:hover path,
     .header .logo svg:hover polygon {
       fill: #6C3F98; }
+  .header .logo.active path,
+  .header .logo.active polygon {
+    fill: #FFF; }
   .header.sticky {
     position: fixed;
     top: 0;
@@ -884,7 +891,7 @@ i.icon, img.icon, svg.icon {
     .mobile-menu-btn .ham .line {
       width: 50px;
       height: 5px;
-      background: radial-gradient(62% -6%, #6C3F98 0%, #AE5AFF 100%);
+      background: #FFF;
       display: block;
       margin: 9px auto;
       border-radius: 25px;
@@ -944,12 +951,23 @@ i.icon, img.icon, svg.icon {
   /* Both the .row and .image need the .right class to make it work */ }
   .image-grid .row.right {
     flex-direction: row-reverse; }
+    .image-grid .row.right > section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      align-content: flex-start; }
+    .image-grid .row.right > section:first-child {
+      order: 2; }
+    .image-grid .row.right > section:nth-child(2n) {
+      order: 1; }
   @media (min-width: 992px) {
     .image-grid .row .image {
       z-index: -1;
       /* Both the .row and .image need the .right class to make it work */ }
-      .image-grid .row .image.right img {
-        float: right; }
+      .image-grid .row .image.right {
+        order: 2; }
+        .image-grid .row .image.right img {
+          float: right; }
     .image-grid .row .text {
       position: absolute;
       top: 0;
@@ -1394,8 +1412,7 @@ a {
   float: right; }
 
 .slick-slide img {
-  display: block;
-  vertical-align: middle; }
+  display: block; }
 
 .slick-slide.slick-loading img {
   display: none; }
