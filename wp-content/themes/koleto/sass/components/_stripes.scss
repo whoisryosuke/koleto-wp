@@ -83,15 +83,27 @@
 
     @include media-breakpoint-up(md) {
         &>.stripes {
-            left: 33%;
-            top: -9%;
+            left: 68%;
+            top: -15%;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        &>.stripes {
+            left: 50%;
+            top: -13%;
         }
     }
     @include media-breakpoint-up(xl) {
         & > .stripes
         {
-            left: 42%;
-            top: -29%;
+            left: 46%;
+            top: -32%;
+        }
+    }
+    @media only screen and (min-width: 2200px) {
+        &>.stripes {
+            left: 60%;
+            top: -32%;
         }
     }
 

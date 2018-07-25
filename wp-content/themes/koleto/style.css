@@ -573,6 +573,9 @@ i.icon, img.icon, svg.icon {
     box-shadow: none; }
   .segment.padded {
     padding: 4rem; }
+    @media (max-width: 767.98px) {
+      .segment.padded {
+        padding: 2rem; } }
   .segment.very.padded {
     padding: 6rem; }
 
@@ -763,12 +766,20 @@ i.icon, img.icon, svg.icon {
     top: -9%; }
   @media (min-width: 768px) {
     .site--stripes > .stripes {
-      left: 33%;
-      top: -9%; } }
+      left: 68%;
+      top: -15%; } }
+  @media (min-width: 992px) {
+    .site--stripes > .stripes {
+      left: 50%;
+      top: -13%; } }
   @media (min-width: 1200px) {
     .site--stripes > .stripes {
-      left: 42%;
-      top: -29%; } }
+      left: 46%;
+      top: -32%; } }
+  @media only screen and (min-width: 2200px) {
+    .site--stripes > .stripes {
+      left: 60%;
+      top: -32%; } }
   .site--stripes.right > .stripes {
     left: 25%;
     top: -10%; }
