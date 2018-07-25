@@ -32,7 +32,7 @@
 			<? /* <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> */ ?>
 			<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Logo/koleto-logo.svg" alt="" /> -->
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<svg width="747px" height="296px" viewBox="0 0 747 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<svg width="177px" height="70px" viewBox="0 0 747 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<defs>
 						<linearGradient x1="78.0244173%" y1="15.9913596%" x2="44.1796696%" y2="80.6833802%" id="linearGradient-1">
 							<stop stop-color="#EF486C" offset="0%"></stop>
