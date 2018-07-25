@@ -115,24 +115,26 @@
 
     &.right {
         &>.stripes {
-            left: 25%;
-            top: -10%;
+            left: 85%;
+            top: -9%;
         }
 
         @include media-breakpoint-up(lg) {
             &>.stripes {
-                left: 35%;
-                top: -15%;
+                left: 49%;
+                top: -20%;
             }
         }
         @include media-breakpoint-up(xl) {
             &>.stripes {
-                left: 45%;
+                left: 75%;
                 top: -19%;
             }
         }
     }
 }
+
+/* Stripes used on header of site*/
 
 @keyframes fadeInDown {
     from {

@@ -104,7 +104,7 @@
 			<ul>
 				<li><a href="/about/" name="about">About</a></li>
 				<li><a href="/about/" name="services">Services</a></li>
-				<li><button name="solutions">Solutions</button></li>
+				<li><a href="/leadership/" name="solutions">Solutions</a></li>
 				<li><a href="/about/" name="safety">Safety</a></li>
 				<li><a href="/leadership/" name="leadership">Leadership</a></li>
 			</ul>

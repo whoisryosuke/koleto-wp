@@ -785,17 +785,18 @@ i.icon, img.icon, svg.icon {
       left: 60%;
       top: -32%; } }
   .site--stripes.right > .stripes {
-    left: 25%;
-    top: -10%; }
+    left: 85%;
+    top: -9%; }
   @media (min-width: 992px) {
     .site--stripes.right > .stripes {
-      left: 35%;
-      top: -15%; } }
+      left: 49%;
+      top: -20%; } }
   @media (min-width: 1200px) {
     .site--stripes.right > .stripes {
-      left: 45%;
+      left: 75%;
       top: -19%; } }
 
+/* Stripes used on header of site*/
 @keyframes fadeInDown {
   from {
     opacity: 0;
