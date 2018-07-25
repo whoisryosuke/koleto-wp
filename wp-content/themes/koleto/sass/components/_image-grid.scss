@@ -27,6 +27,13 @@
             }
         }
         
+        @include media-breakpoint-only(sm) {
+            .segment {
+                margin:-1rem;
+                z-index:710;
+            }
+        }
+
         @include media-breakpoint-up(lg) {
 
             .image

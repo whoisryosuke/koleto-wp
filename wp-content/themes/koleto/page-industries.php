@@ -84,7 +84,7 @@
 
 
 
-            <section id="safety" class="hero hero--stripes overflow left primary-g not-animated">
+            <section id="safety" class="hero hero--stripes left primary-g not-animated">
                 <div class="stripes primary">
                     <div class="stripes__row">
                         <div class="stripe"></div>

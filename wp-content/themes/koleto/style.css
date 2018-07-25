@@ -1014,6 +1014,10 @@ i.icon, img.icon, svg.icon {
       order: 2; }
     .image-grid .row.right > section:nth-child(2n) {
       order: 1; }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .image-grid .row .segment {
+      margin: -1rem;
+      z-index: 710; } }
   @media (min-width: 992px) {
     .image-grid .row .image {
       z-index: -1;
