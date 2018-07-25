@@ -955,6 +955,9 @@ i.icon, img.icon, svg.icon {
     .mobile-menu-btn {
       display: none; } }
 
+#mobile-menu {
+  margin-top: 2rem; }
+
 .menu > ul li {
   display: inline-block;
   margin-right: 1rem; }
