@@ -49,7 +49,7 @@
 	</footer><!-- .footer -->
 </div><!-- #page -->
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css" type="text/css" media="all" />
+<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css" type="text/css" media="all" /> -->
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 

@@ -26,6 +26,10 @@
         }
     }
 
+    &.animated {
+        transition: all 400ms ease-in-out;
+    }
+
     /* Stripe */
     .stripes__row:nth-child(2n) {
         position: absolute;
@@ -78,6 +82,8 @@
         z-index: -1;
         left: 82%;
         top: -9%;
+        animation-name: fadeInDown;
+        animation-duration: 1s;
     }
 
 
@@ -125,5 +131,16 @@
                 top: -19%;
             }
         }
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform:translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform:translateY(0%);
     }
 }
