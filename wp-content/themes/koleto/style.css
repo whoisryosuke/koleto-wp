@@ -602,6 +602,9 @@ i.icon, img.icon, svg.icon {
           .segment.icons .row figure svg {
             max-width: 3rem;
             max-height: 3rem; } }
+  @media (max-width: 767.98px) {
+    .segment.icons .row {
+      margin-top: -7rem; } }
 
 /* Fixes issue where nested segment boxes cause excessive padding */
 .container > .segment {

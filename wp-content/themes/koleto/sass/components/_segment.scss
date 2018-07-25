@@ -68,6 +68,12 @@
             }
         }
     }
+    @include media-breakpoint-down(sm) {
+        .row {
+            margin-top:-7rem;
+        }
+    }
+
 }
 
 /* Fixes issue where nested segment boxes cause excessive padding */

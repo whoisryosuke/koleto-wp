@@ -31,9 +31,9 @@
                         <section class="col-sm-10 col-md-8 col-lg-5">
                             <h1 class="animated fadeIn">Innovative Packaging Solutions for Cannabis, CBD and Modern Medicine</h1>
                             <p class="animated fadeIn first">Creating the bridge between compliant and safe packaging with innovative state of the art technology and products.</p>
-                            <button id="contactBtn" name="contact" class="button animated fadeIn second">
+                            <a href="#contact" id="contactBtn" name="contact" class="button animated fadeIn second">
                                 Learn more
-                            </button>
+                            </a>
                         </section>
                 </section> 
             </section> 

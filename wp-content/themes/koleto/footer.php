@@ -66,6 +66,7 @@
 	}
 
 	function smoothScroll(event) {
+		event.preventDefault();
 		document.querySelector('#' + event.target.name).scrollIntoView({ 
 			behavior: 'smooth' 
 		});
