@@ -1027,7 +1027,7 @@ i.icon, img.icon, svg.icon {
   @media (max-width: 991.98px) {
     .image-grid .row .segment {
       margin: -1rem;
-      z-index: 710; } }
+      z-index: 400; } }
   @media (min-width: 992px) {
     .image-grid .row .image {
       z-index: -1;
