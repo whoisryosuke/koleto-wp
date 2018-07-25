@@ -26,6 +26,7 @@
     {
         padding:6rem;
     }
+
 }
 
 .segment.icons
@@ -80,4 +81,15 @@
 .container > .segment
 {
     margin-bottom:0;
+}
+
+/* Page specific */
+@include media-breakpoint-down(sm) {
+    #contact .segment {
+        margin: 0;
+    }
+
+    #contact .col-md-6:first-child .segment {
+        margin-top: 2rem;
+    }
 }

@@ -610,6 +610,13 @@ i.icon, img.icon, svg.icon {
 .container > .segment {
   margin-bottom: 0; }
 
+/* Page specific */
+@media (max-width: 767.98px) {
+  #contact .segment {
+    margin: 0; }
+  #contact .col-md-6:first-child .segment {
+    margin-top: 2rem; } }
+
 .split-rows {
   position: relative;
   /* Reorder the items in every other row
