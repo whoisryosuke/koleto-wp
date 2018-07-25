@@ -27,7 +27,7 @@
             }
         }
         
-        @include media-breakpoint-only(sm) {
+        @include media-breakpoint-down(md) {
             .segment {
                 margin:-1rem;
                 z-index:710;
