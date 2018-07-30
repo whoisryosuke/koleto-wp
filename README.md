@@ -16,6 +16,8 @@ Project is setup for git deployment to WP-Engine. Just push master to prod.
 `git commit -m "Your message"`
 `git push production master`
 
+> Make sure your SSH key is added to the WP-Engine keychain.
+
 ### Docker
 
 Uses Wordpress Docker image and MariaDB to spin up a Wordpress compatible container.
