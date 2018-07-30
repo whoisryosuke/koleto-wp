@@ -2,6 +2,12 @@
 
 ## Development
 
+### Getting Started
+
+1. `git clone` project.
+2. Grab a fresh Wordpress install and merge into project
+3. Spin up docker!
+
 ### Production
 
 Project is setup for git deployment to WP-Engine. Just push master to prod.

@@ -83,10 +83,7 @@
 			// ) );
 			?>
 			<div id="primary-menu" class="menu">
-				<ul>
-					<li><a href="/about/" name="about">About</a></li>
-					<li><a href="/leadership/" name="leadership">Leadership</a></li>
-				</ul>
+				<?php get_template_part( 'menu' ); ?>
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- .header -->
@@ -98,10 +95,7 @@
 		// ) );
 		?>
 		<div id="mobile-menu" class="menu">
-			<ul>
-				<li><a href="/about/" name="about">About</a></li>
-				<li><a href="/leadership/" name="leadership">Leadership</a></li>
-			</ul>
+			<?php get_template_part( 'menu' ); ?>
 		</div>
 	</nav>
 

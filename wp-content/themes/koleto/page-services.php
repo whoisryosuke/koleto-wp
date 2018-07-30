@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Industries
+ * Template Name: Services
  *
  * @package Koleto
  */
