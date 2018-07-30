@@ -12,7 +12,7 @@
 		<main id="main" class="site-main site--stripes right">
             <!-- Stripes for site BG -->
             <div class="stripes primary animated fadeInDown">
-                <div class="stripes__row">a
+                <div class="stripes__row">
                     <div class="stripe"></div>
                     <div class="stripe"></div>
                     <div class="stripe"></div>
@@ -87,12 +87,15 @@
                     <section class="products-slider slider">
                         <div class="slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Products/small-palm-n-turn-glass-base-2.jpg" alt="" />
+                            <h3>Palm N Turn</h3>
                         </div>
                         <div class="slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Products/mini-grip-n-glide.jpg" alt="" />
+                            <h3>Grip N Glide</h3>
                         </div>
                         <div class="slide">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/Products/small-palm-n-turn-glass-base-2.jpg" alt="" />
+                            <h3>Palm N Turn</h3>
                         </div>
                     </section>
                 </div>

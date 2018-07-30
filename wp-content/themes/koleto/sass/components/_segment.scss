@@ -29,6 +29,12 @@
 
 }
 
+/** Fix over-padding of segments under hero component **/
+
+.hero + .segment {
+    padding-top:0;
+}
+
 .segment.icons
 {
     margin-top:10rem;

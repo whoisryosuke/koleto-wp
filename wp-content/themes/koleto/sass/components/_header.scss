@@ -8,6 +8,9 @@
 
     display:flex;
     justify-content: space-between;
+    transition: all 400ms ease-in-out;
+    animation-name: fadeHeaderUp;
+    animation-duration: 1s;
 
 
     .header__menu
@@ -18,7 +21,6 @@
 
         .menu
         {
-            margin-top:1.5rem;
             margin-right:1rem;
             
             a,
@@ -81,7 +83,7 @@
             }
         }
     }
-
+    
     &.sticky 
     {
         position: fixed;
@@ -89,6 +91,8 @@
         width: 100%;
         z-index:420;
         background-image:$color__gradient-primary;
+        animation-name: fadeHeaderDown;
+        animation-duration: 1s;
 
         // @todo: animate transform: translateY to scroll down once when sticky class is applied
 
@@ -111,6 +115,17 @@
                     // Fill with gradient, but not animated
                     // fill: url(#linearGradient-2)
                 }
+            }
+        }
+
+        /** Hide menu BG on sticky header **/
+        & #primary-menu {
+            ul {
+                padding:0;
+                margin-top:1.5rem;
+            }
+            ul:before {
+                display: none;
             }
         }
     }
@@ -239,4 +254,29 @@
 
 #mobile-menu {
     margin-top:2rem;
+}
+
+
+/** Animations **/
+
+@keyframes fadeHeaderDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeHeaderUp {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

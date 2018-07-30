@@ -15,7 +15,7 @@
 
 	<footer class="footer container-fluid">
 		<div class="row justify-content-between">
-			<section class="col-sm-4">
+			<section class="col-lg-4">
 				<svg id="footer-logo" width="139px" height="28px" viewBox="0 0 139 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<defs></defs>
 					<g id="Sketching" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -24,7 +24,7 @@
 				</svg>
 				<p>Copyright 2018, Koleto, Inc - All Right Reserved</p>
 			</section>
-			<section class="col-sm-4 text-right">
+			<section class="col-lg-4 text-right">
 				<section class="social menu">
 					<ul class="nav-menu">
 						<li>
@@ -56,6 +56,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/waypoints.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/frontpage.js" type="text/javascript"></script>
 <script>
+	// Mobile menu button
 	document.getElementById('mobileMenuBtn').onclick = function() {
 		var mobileMenu = document.getElementById('mobileMenu');
 		var logo = document.getElementById('logo');
@@ -65,6 +66,7 @@
 		
 	}
 
+	// Smooth scroll event handler
 	function smoothScroll(event) {
 		event.preventDefault();
 		document.querySelector('#' + event.target.name).scrollIntoView({ 
@@ -73,25 +75,24 @@
 		console.log(event.target.name)
 	}
 
+	// Hide form labels on click if necessary (using CSS .active class)
 	function hideLabel(event) {
 		var child = event.target.parentNode.getElementsByClassName('ao-form-label')[0]
 
 		child.classList.toggle('active')
-		console.log(event.target.name)
 	}
 
-
+	// Loop through all menu buttons to apply smooth scroll effect
 	document.querySelectorAll('.menu li button').forEach(function(button) {
 		button.onclick = smoothScroll
 	});
 
-	// document.getElementById('aboutBtn').onclick = smoothScroll
+	// Smooth scroll for contact button
 	document.getElementById('contactBtn').onclick = smoothScroll
 
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
@@ -107,6 +108,28 @@ $(document).ready(function(){
             breakpoint: 768,
             settings: {
                 slidesToShow: 4
+            }
+        }, {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+
+    $('.products-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        speed: 600,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
             }
         }, {
             breakpoint: 700,

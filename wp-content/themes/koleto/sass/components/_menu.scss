@@ -5,13 +5,35 @@
         li
         {
             display:inline-block;
-            margin-right:1rem;
+            margin:0 0.5rem;
         }
     }
 }
 
 #primary-menu
 {
+    position:relative;
+
+    ul {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    ul:before {
+        content:'';
+        width:100%;
+        min-height:4rem;
+        display:block;
+        background:$color__gradient-primary;
+        padding:0.5rem;
+        top:-0.25rem;
+        right:0;
+        position:absolute;
+        z-index:-1;
+        // transform: skew(-22deg, -2deg);
+        transform: skew(-22deg, 0deg);
+    }
+
     button {
         cursor: pointer;
     }
