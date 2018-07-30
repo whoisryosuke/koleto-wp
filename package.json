@@ -1,0 +1,32 @@
+{
+  "name": "koleto-wp",
+  "version": "1.0.0",
+  "description": "Wordpress theme for Koleto Packaging Solutions",
+  "main": "index.php",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://whoisryosuke@github.com/whoisryosuke/koleto-wp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress",
+    "theme",
+    "gulp",
+    "sass",
+    "css3"
+  ],
+  "author": "Ryosuke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whoisryosuke/koleto-wp/issues"
+  },
+  "homepage": "https://github.com/whoisryosuke/koleto-wp#readme"
+}
