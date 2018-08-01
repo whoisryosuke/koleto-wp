@@ -828,9 +828,7 @@ i.icon, img.icon, svg.icon {
   z-index: 420;
   display: flex;
   justify-content: space-between;
-  transition: all 400ms ease-in-out;
-  animation-name: fadeHeaderUp;
-  animation-duration: 1s; }
+  transition: all 400ms ease-in-out; }
   .header .header__menu {
     display: inline-block;
     padding-top: 0.5rem;
@@ -868,8 +866,6 @@ i.icon, img.icon, svg.icon {
     width: 100%;
     z-index: 420;
     background-image: linear-gradient(-134deg, #6C3F98 0%, #EE486B 100%);
-    animation-name: fadeHeaderDown;
-    animation-duration: 1s;
     /** Hide menu BG on sticky header **/ }
     .header.sticky .logo {
       display: inline-block; }
