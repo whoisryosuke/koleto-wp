@@ -9,8 +9,8 @@
     display:flex;
     justify-content: space-between;
     transition: all 400ms ease-in-out;
-    animation-name: fadeHeaderUp;
-    animation-duration: 1s;
+    // animation-name: fadeHeaderUp;
+    // animation-duration: 1s;
 
 
     .header__menu
@@ -91,10 +91,8 @@
         width: 100%;
         z-index:420;
         background-image:$color__gradient-primary;
-        animation-name: fadeHeaderDown;
-        animation-duration: 1s;
-
-        // @todo: animate transform: translateY to scroll down once when sticky class is applied
+        // animation-name: fadeHeaderDown;
+        // animation-duration: 1s;
 
         .logo {
             display:inline-block;
